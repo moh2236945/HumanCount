@@ -1,9 +1,5 @@
 # HumanCount
 
-This repository contains the final project's code for the **Computer Vision** course at Sapienza University of Rome (A.Y. 2021-22).
-
-By [Davide Quaranta](https://github.com/fortym2/), [Davide Modenese](https://github.com/EatingLupini), [Federico Cernera](https://github.com/fedecerno).
-
 ![img](docs/main_screen.png)
 
 The project does **real-time human counting** using HOG and SVM, and it is intended to be used to **monitor a known area**. In addition to counting, the program:
@@ -85,32 +81,7 @@ This section contains some example, explaining the outcome of certain command li
 python3 main.py -i datasets/5.json
 ```
 
-![image-20220114165531986](docs/demo_1.png)
 
-```bash
-# also show the hog-generated bounding boxes (blue)
-python3 main.py -i datasets/6.json --show-hog-boxes
-```
-
-![image-20220114165658949](docs/demo_2.png)
-
-```bash
-# also show the hog-generated bounding boxes (blue), and show the optimized ones even if they are not in an hog box (no filter)
-python3 main.py -i datasets/7.json --show-hog-boxes --no-filter-optimized-boxes
-```
-
-![image-20220114165818992](docs/demo_3.png)
-
-```bash
-# also show the hog-generated bounding boxes (blue),
-# and some preprocessing steps in separate windows (segmentation, countours extraction)
-python3 main.py -i datasets/8.json --show-hog-boxes --show
-```
-
-![image-20220114170119542](docs/demo_4.png)
-
-### Terminal output
 
 In addition to the visual signals (colored circles in the right bottom, and colored distances), alarms are logged to `stdout`.
 
-![image-20220114170403252](docs/terminal-alarms.png)
