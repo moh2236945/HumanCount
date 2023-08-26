@@ -1,7 +1,5 @@
 # HumanCount
 
-![img](docs/main_screen.png)
-
 The project does **real-time human counting** using HOG and SVM, and it is intended to be used to **monitor a known area**. In addition to counting, the program:
 
 * Estimates the **distance** between people.
